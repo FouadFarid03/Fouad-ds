@@ -1,0 +1,494 @@
+Last login: Sat Apr 26 22:51:05 on ttys004
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) macbooks-MacBook-Pro:~ fouad$ cd /Users/fouad/Desktop/data science
+-bash: cd: /Users/fouad/Desktop/data: No such file or directory
+(base) macbooks-MacBook-Pro:~ fouad$ cd "/Users/fouad/Desktop/data science"
+(base) macbooks-MacBook-Pro:data science fouad$ git init
+Initialized empty Git repository in /Users/fouad/Desktop/data science/.git/
+(base) macbooks-MacBook-Pro:data science fouad$ git remote origin git remote add origin git@github.com:FouadFarid03/data.git
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+(base) macbooks-MacBook-Pro:data science fouad$ git branch -M main
+(base) macbooks-MacBook-Pro:data science fouad$ git remote origin git@github.com:FouadFarid03/data.gitgit remote
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+(base) macbooks-MacBook-Pro:data science fouad$ git remote -v
+(base) macbooks-MacBook-Pro:data science fouad$ git remote -v
+(base) macbooks-MacBook-Pro:data science fouad$ git remote -v
+(base) macbooks-MacBook-Pro:data science fouad$ git remote add origin git@github.com:FouadFarid03/data.git
+(base) macbooks-MacBook-Pro:data science fouad$ git remote -v
+origin	git@github.com:FouadFarid03/data.git (fetch)
+origin	git@github.com:FouadFarid03/data.git (push)
+(base) macbooks-MacBook-Pro:data science fouad$ git branch -M main
+(base) macbooks-MacBook-Pro:data science fouad$ git branch
+(base) macbooks-MacBook-Pro:data science fouad$ git branch -a
+(base) macbooks-MacBook-Pro:data science fouad$ git branch -r
+(base) macbooks-MacBook-Pro:data science fouad$ brew install git-lfs
+-bash: brew: command not found
+(base) macbooks-MacBook-Pro:data science fouad$ brew install git-lfs
+-bash: brew: command not found
+(base) macbooks-MacBook-Pro:data science fouad$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> You are using macOS 12.7.
+==> We (and Apple) do not provide support for this old version.
+This installation may not succeed.
+After installation, you will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving any
+issues you experience while you are running this old version.
+
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+==> The following existing directories will be made group writable:
+/usr/local/bin
+/usr/local/share
+==> The following existing directories will have their owner set to fouad:
+/usr/local/bin
+/usr/local/share
+==> The following existing directories will have their group set to admin:
+/usr/local/bin
+/usr/local/share
+==> The following new directories will be created:
+/usr/local/etc
+/usr/local/include
+/usr/local/lib
+/usr/local/sbin
+/usr/local/var
+/usr/local/opt
+/usr/local/share/zsh
+/usr/local/share/zsh/site-functions
+/usr/local/var/homebrew
+/usr/local/var/homebrew/linked
+/usr/local/Cellar
+/usr/local/Caskroom
+/usr/local/Frameworks
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /bin/chmod u+rwx /usr/local/bin /usr/local/share
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/bin /usr/local/share
+==> /usr/bin/sudo /usr/sbin/chown fouad /usr/local/bin /usr/local/share
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/bin /usr/local/share
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod ug=rwx /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod go-w /usr/local/share/zsh /usr/local/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown fouad /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R fouad:admin /usr/local/Homebrew
+==> /usr/bin/sudo /bin/mkdir -p /Users/fouad/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Users/fouad/Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R fouad /Users/fouad/Library/Caches/Homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 300043, done.
+remote: Counting objects: 100% (262/262), done.
+remote: Compressing objects: 100% (132/132), done.
+remote: Total 300043 (delta 188), reused 174 (delta 130), pack-reused 299781 (from 3)
+remote: Enumerating objects: 55, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Total 55 (delta 33), reused 33 (delta 33), pack-reused 22 (from 1)
+==> Updating Homebrew...
+==> Downloading https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:ef0bc1da0f381f61f3e1fbc1abaf7616f66d1e2fff5eff3682645f966077392d
+######################################################################### 100.0%
+==> Pouring portable-ruby-3.3.8.el_capitan.bottle.tar.gz
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these commands in your terminal to add Homebrew to your PATH:
+    echo >> /Users/fouad/.bash_profile
+    echo 'eval "$(/usr/local/bin/brew shellenv)"' >> /Users/fouad/.bash_profile
+    eval "$(/usr/local/bin/brew shellenv)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+(base) macbooks-MacBook-Pro:data science fouad$ brew install git-lfs
+
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+Do not report any issues to Homebrew/* repositories!
+Read the above document instead before opening any issues or PRs.
+
+==> Fetching dependencies for git-lfs: libyaml, ca-certificates, openssl@3, m4, autoconf, pkgconf, libssh2, cmake, libgit2, xz, lz4, zstd, ninja, mpdecimal, readline, sqlite, lzip, expat, python@3.13, pcre2, swig, llvm@19, rust, ruby, asciidoctor and go
+==> Fetching libyaml
+==> Downloading https://ghcr.io/v2/homebrew/core/libyaml/manifests/0.2.5
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/libyaml/blobs/sha256:dbd54ce703
+######################################################################### 100.0%
+==> Fetching ca-certificates
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2025-
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8f
+######################################################################### 100.0%
+==> Fetching openssl@3
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/openssl/openssl/releases/download/openssl-3.4
+==> Downloading from https://objects.githubusercontent.com/github-production-rel
+######################################################################### 100.0%
+==> Fetching m4
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/manifests/1.4.19
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:8a17c921e513520
+######################################################################### 100.0%
+==> Fetching autoconf
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/manifests/2.72-1
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/blobs/sha256:ab03a9de5
+######################################################################### 100.0%
+==> Fetching pkgconf
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://distfiles.ariadne.space/pkgconf/pkgconf-2.4.3.tar.xz
+######################################################################### 100.0%
+==> Fetching libssh2
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://libssh2.org/download/libssh2-1.11.1.tar.gz
+######################################################################### 100.0%
+==> Fetching cmake
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/Kitware/CMake/releases/download/v4.0.1/cmake-
+==> Downloading from https://objects.githubusercontent.com/github-production-rel
+######################################################################### 100.0%
+==> Fetching libgit2
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/libgit2/libgit2/archive/refs/tags/v1.9.0.tar.
+==> Downloading from https://codeload.github.com/libgit2/libgit2/tar.gz/refs/tag
+             -=#=-  #    #     #                                                
+==> Fetching xz
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/tukaani-project/xz/releases/download/v5.8.1/x
+==> Downloading from https://objects.githubusercontent.com/github-production-rel
+######################################################################### 100.0%
+==> Fetching lz4
+==> Downloading https://ghcr.io/v2/homebrew/core/lz4/manifests/1.10.0-1
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/lz4/blobs/sha256:f78cc448808d04
+######################################################################### 100.0%
+==> Fetching zstd
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/facebook/zstd/archive/refs/tags/v1.5.7.tar.gz
+==> Downloading from https://codeload.github.com/facebook/zstd/tar.gz/refs/tags/
+######################################################################### 100.0%
+==> Fetching ninja
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.1.t
+==> Downloading from https://codeload.github.com/ninja-build/ninja/tar.gz/refs/t
+######################################################################### 100.0%
+==> Fetching mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:266a3f51
+######################################################################### 100.0%
+==> Fetching readline
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:5e5ae8819
+######################################################################### 100.0%
+==> Fetching sqlite
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://www.sqlite.org/2025/sqlite-autoconf-3490100.tar.gz
+######################################################################### 100.0%
+==> Fetching lzip
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://download-mirror.savannah.gnu.org/releases/lzip/lzip-1.25
+######################################################################### 100.0%
+==> Fetching expat
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/libexpat/libexpat/releases/download/R_2_7_1/e
+==> Downloading from https://objects.githubusercontent.com/github-production-rel
+######################################################################### 100.0%
+==> Fetching python@3.13
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/8b5bc
+######################################################################### 100.0%
+==> Downloading https://files.pythonhosted.org/packages/69/59/b6fc2188dfc7ea4f93
+######################################################################### 100.0%
+==> Downloading https://files.pythonhosted.org/packages/70/53/b309b4a497b09655cb
+######################################################################### 100.0%
+==> Downloading https://files.pythonhosted.org/packages/a9/5a/0db4da3bc908df06e5
+######################################################################### 100.0%
+==> Downloading https://files.pythonhosted.org/packages/8a/98/2d9906746cdc6a6ef8
+######################################################################### 100.0%
+==> Downloading https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tgz
+######################################################################### 100.0%
+==> Fetching pcre2
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10
+==> Downloading from https://objects.githubusercontent.com/github-production-rel
+######################################################################### 100.0%
+==> Fetching swig
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://downloads.sourceforge.net/project/swig/swig/swig-4.3.1/s
+==> Downloading from https://netix.dl.sourceforge.net/project/swig/swig/swig-4.3
+######################################################################### 100.0%
+==> Fetching llvm@19
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/llvm/llvm-project/commit/1682c99a8877364f1d84
+######################################################################### 100.0%
+==> Downloading https://github.com/llvm/llvm-project/commit/88dd0d33147a7f46a3c9
+######################################################################### 100.0%
+==> Downloading https://github.com/llvm/llvm-project/commit/a3e8b860788934d7cc14
+######################################################################### 100.0%
+==> Downloading https://github.com/llvm/llvm-project/releases/download/llvmorg-1
+==> Downloading from https://objects.githubusercontent.com/github-production-rel
+######################################################################### 100.0%
+==> Fetching rust
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/rust-lang/cargo/archive/refs/tags/0.87.0.tar.
+==> Downloading from https://codeload.github.com/rust-lang/cargo/tar.gz/refs/tag
+######################################################################### 100.0%
+==> Downloading https://static.rust-lang.org/dist/2025-02-20/rustc-1.85.0-x86_64
+######################################################################### 100.0%
+==> Downloading https://static.rust-lang.org/dist/2025-02-20/cargo-1.85.0-x86_64
+######################################################################### 100.0%
+==> Downloading https://static.rust-lang.org/dist/2025-02-20/rust-std-1.85.0-x86
+######################################################################### 100.0%
+==> Downloading https://static.rust-lang.org/dist/rustc-1.86.0-src.tar.gz
+######################################################################### 100.0%
+==> Fetching ruby
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://rubygems.org/rubygems/rubygems-3.6.8.tgz
+######################################################################### 100.0%
+==> Downloading https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.3.tar.gz
+######################################################################### 100.0%
+==> Fetching asciidoctor
+==> Downloading https://ghcr.io/v2/homebrew/core/asciidoctor/manifests/2.0.23
+######################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/asciidoctor/blobs/sha256:aa9fef
+######################################################################### 100.0%
+==> Fetching go
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://storage.googleapis.com/golang/go1.22.12.darwin-amd64.tar
+######################################################################### 100.0%
+==> Downloading https://go.dev/dl/go1.24.2.src.tar.gz
+==> Downloading from https://dl.google.com/go/go1.24.2.src.tar.gz
+######################################################################### 100.0%
+==> Installing git-lfs dependency: lzip
+
+==> ./configure CXX=clang++ CXXFLAGS=
+==> make check
+==> make install
+🍺  /usr/local/Cellar/lzip/1.25: 11 files, 234.2KB, built in 20 seconds
+==> Fetching dependencies for git-lfs: openssl@3, pkgconf, libssh2, cmake, libgit2, xz, zstd, ninja, sqlite, expat, python@3.13, pcre2, swig, llvm@19, rust, ruby and go
+==> Fetching git-lfs
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/a41f8e6
+######################################################################### 100.0%
+==> Downloading https://github.com/git-lfs/git-lfs/releases/download/v3.6.1/git-
+==> Downloading from https://objects.githubusercontent.com/github-production-rel
+######################################################################### 100.0%
+==> Installing dependencies for git-lfs: libyaml, ca-certificates, openssl@3, m4, autoconf, pkgconf, libssh2, cmake, libgit2, xz, lz4, zstd, ninja, mpdecimal, readline, sqlite, expat, python@3.13, pcre2, swig, llvm@19, rust, ruby, asciidoctor and go
+==> Installing git-lfs dependency: libyaml
+==> Downloading https://ghcr.io/v2/homebrew/core/libyaml/manifests/0.2.5
+Already downloaded: /Users/fouad/Library/Caches/Homebrew/downloads/5f6b0af1730aa1bc02f8021c90ed7ffe988eeba95eec83e6c828f77332ba6406--libyaml-0.2.5.bottle_manifest.json
+==> Pouring libyaml--0.2.5.monterey.bottle.tar.gz
+🍺  /usr/local/Cellar/libyaml/0.2.5: 11 files, 333.9KB
+==> Installing git-lfs dependency: ca-certificates
+==> Downloading https://ghcr.io/v2/homebrew/core/ca-certificates/manifests/2025-
+Already downloaded: /Users/fouad/Library/Caches/Homebrew/downloads/6c1debb525d4dc6007afae4cd2b772105111632b22fc28506550f6dfe27c6d52--ca-certificates-2025-02-25.bottle_manifest.json
+==> Pouring ca-certificates--2025-02-25.all.bottle.tar.gz
+==> Regenerating CA certificate bundle from keychain, this may take a while...
+TMPDIR is world-writable: /private/tmp
+TMP is world-writable: /private/tmp
+TEMP is world-writable: /private/tmp
+🍺  /usr/local/Cellar/ca-certificates/2025-02-25: 4 files, 235.9KB
+==> Installing git-lfs dependency: openssl@3
+==> perl ./Configure --prefix=/usr/local/Cellar/openssl@3/3.4.1 --openssldir=/us
+==> make
+
+
+            
+==> make install MANDIR=/usr/local/Cellar/openssl@3/3.4.1/share/man MANSUFFIX=ss
+==> make HARNESS_JOBS=4 test TESTS=-test_afalg
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+🍺  /usr/local/Cellar/openssl@3/3.4.1: 7,227 files, 34.0MB, built in 18 minutes 59 seconds
+==> Installing git-lfs dependency: m4
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/manifests/1.4.19
+Already downloaded: /Users/fouad/Library/Caches/Homebrew/downloads/5b2a7f715487b7377e409e8ca58569040cd89f33859f691210c58d94410fd33b--m4-1.4.19.bottle_manifest.json
+==> Pouring m4--1.4.19.monterey.bottle.tar.gz
+🍺  /usr/local/Cellar/m4/1.4.19: 14 files, 743.3KB
+==> Installing git-lfs dependency: autoconf
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/manifests/2.72-1
+Already downloaded: /Users/fouad/Library/Caches/Homebrew/downloads/1b54b8d75974d006eb6be1db91a6ec040791ac751f25271fcd5a1d78cb361afd--autoconf-2.72-1.bottle_manifest.json
+==> Pouring autoconf--2.72.monterey.bottle.1.tar.gz
+🍺  /usr/local/Cellar/autoconf/2.72: 72 files, 3.6MB
+==> Installing git-lfs dependency: pkgconf
+==> ./configure --disable-silent-rules --with-pkg-config-dir=/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig:/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgco
+==> make
+==> make install
+🍺  /usr/local/Cellar/pkgconf/2.4.3: 27 files, 424.1KB, built in 37 seconds
+==> Installing git-lfs dependency: libssh2
+==> ./configure --disable-silent-rules --disable-examples-build --with-openssl --with-libz --with-libssl-prefix=/usr/local/opt/openssl@3
+==> make install
+🍺  /usr/local/Cellar/libssh2/1.11.1: 201 files, 1.2MB, built in 545 minutes 43 seconds
+==> Installing git-lfs dependency: cmake
+==> ./bootstrap --prefix=/usr/local/Cellar/cmake/4.0.1 --no-system-libs --parallel=4 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip
+==> make
+==> make install
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+🍺  /usr/local/Cellar/cmake/4.0.1: 3,870 files, 64.3MB, built in 40 minutes 46 seconds
+==> Installing git-lfs dependency: libgit2
+==> cmake -S . -B build -DBUILD_SHARED_LIBS=ON -DBUILD_EXAMPLES=OFF -DBUILD_TESTS=OFF -DUSE_SSH=ON -DUSE_BUNDLED_ZLIB=OFF
+==> cmake --build build
+==> cmake --install build
+==> cmake -S . -B build-static -DBUILD_SHARED_LIBS=OFF -DBUILD_EXAMPLES=OFF -DBUILD_TESTS=OFF -DUSE_SSH=ON -DUSE_BUNDLED_ZLIB=OFF
+==> cmake --build build-static
+🍺  /usr/local/Cellar/libgit2/1.9.0: 109 files, 4.9MB, built in 1 minute 59 seconds
+==> Installing git-lfs dependency: xz
+==> ./configure --disable-silent-rules --disable-nls
+==> make check
+==> make install
+🍺  /usr/local/Cellar/xz/5.8.1: 96 files, 2.5MB, built in 3 minutes 35 seconds
+==> Installing git-lfs dependency: lz4
+==> Downloading https://ghcr.io/v2/homebrew/core/lz4/manifests/1.10.0-1
+Already downloaded: /Users/fouad/Library/Caches/Homebrew/downloads/8e11e90eb21a06e0f199af9d80e011e3693c77dd353b2477579d95c8471a5802--lz4-1.10.0-1.bottle_manifest.json
+==> Pouring lz4--1.10.0.monterey.bottle.1.tar.gz
+🍺  /usr/local/Cellar/lz4/1.10.0: 24 files, 762.3KB
+==> Installing git-lfs dependency: zstd
+==> cmake -S build/cmake -B builddir -DZSTD_PROGRAMS_LINK_SHARED=ON -DZSTD_BUILD_CONTRIB=ON -DCMAKE_INSTALL_RPATH=@loader_path/../lib -DZSTD_LEGACY_SUPPORT=ON -DZSTD_ZLIB_SUPPORT=ON
+==> cmake --build builddir
+==> cmake --install builddir
+🍺  /usr/local/Cellar/zstd/1.5.7: 32 files, 2.7MB, built in 1 minute 4 seconds
+==> Installing git-lfs dependency: ninja
+==> python3 configure.py --bootstrap --with-python=python3
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+🍺  /usr/local/Cellar/ninja/1.12.1: 11 files, 470KB, built in 1 minute 31 seconds
+==> Installing git-lfs dependency: mpdecimal
+==> Downloading https://ghcr.io/v2/homebrew/core/mpdecimal/manifests/4.0.0-1
+Already downloaded: /Users/fouad/Library/Caches/Homebrew/downloads/7b63c3b34bee402290af49fac829a6682ab45ea5c9258b6fe03b590a03a4c4a9--mpdecimal-4.0.0-1.bottle_manifest.json
+==> Pouring mpdecimal--4.0.0.monterey.bottle.1.tar.gz
+🍺  /usr/local/Cellar/mpdecimal/4.0.0: 22 files, 603.5KB
+==> Installing git-lfs dependency: readline
+==> Downloading https://ghcr.io/v2/homebrew/core/readline/manifests/8.2.13
+Already downloaded: /Users/fouad/Library/Caches/Homebrew/downloads/aa1afa38997a2866d91c81fdda8b36d436cd4ea7a82aed07d13c83c56eb3460e--readline-8.2.13.bottle_manifest.json
+==> Pouring readline--8.2.13.monterey.bottle.tar.gz
+🍺  /usr/local/Cellar/readline/8.2.13: 51 files, 1.7MB
+==> Installing git-lfs dependency: sqlite
+==> ./configure --enable-readline --disable-editline --enable-session --with-readline-cflags=-I/usr/local/opt/readline/include --with-readline-ldflags=-L/usr/local/opt/readline/lib 
+==> make install
+🍺  /usr/local/Cellar/sqlite/3.49.1: 13 files, 4.7MB, built in 1 minute 16 seconds
+==> Installing git-lfs dependency: expat
+==> ./configure --mandir=/usr/local/Cellar/expat/2.7.1/share/man
+==> make install
+🍺  /usr/local/Cellar/expat/2.7.1: 23 files, 644.5KB, built in 45 seconds
+==> Installing git-lfs dependency: python@3.13
+==> Patching
+==> Applying 3.13-sysconfig.diff
+==> ./configure --enable-ipv6 --datarootdir=/usr/local/Cellar/python@3.13/3.13.3/share --datadir=/usr/local/Cellar/python@3.13/3.13.3/share --without-ensurepip --enable-loadable-sql
+==> make
+ls 
+==> make install PYTHONAPPSDIR=/usr/local/Cellar/python@3.13/3.13.3
+==> make frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python@3.13/3.13.3/share/python@3.13
+==> /usr/local/Cellar/python@3.13/3.13.3/bin/python3.13 -m venv /private/tmp/pythonA3.13-20250427-62123-qi0zrj/Python-3.13.3/whl_build
+==> /private/tmp/pythonA3.13-20250427-62123-qi0zrj/Python-3.13.3/whl_build/bin/pip3 install -v --no-binary :all: --no-index .
+==> /private/tmp/pythonA3.13-20250427-62123-qi0zrj/Python-3.13.3/whl_build/bin/pip3 install -v --no-binary :all: --no-index .
+==> /private/tmp/pythonA3.13-20250427-62123-qi0zrj/Python-3.13.3/whl_build/bin/pip3 install -v --no-binary :all: --no-index .
+==> /private/tmp/pythonA3.13-20250427-62123-qi0zrj/Python-3.13.3/whl_build/bin/pip3 wheel -v --no-binary :all: --no-index --wheel-dir=/usr/local/Cellar/python@3.13/3.13.3/libexec .
+==> /private/tmp/pythonA3.13-20250427-62123-qi0zrj/Python-3.13.3/whl_build/bin/pip3 wheel -v --no-binary :all: --no-index --wheel-dir=/usr/local/Cellar/python@3.13/3.13.3/Frameworks
+==> /usr/local/Cellar/python@3.13/3.13.3/bin/python3.13 -Im ensurepip
+==> /usr/local/Cellar/python@3.13/3.13.3/bin/python3.13 -Im pip install -v --no-index --upgrade --isolated --target=/usr/local/Cellar/python@3.13/3.13.3/lib/python3.13/site-packages
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/idle3
+Target /usr/local/bin/idle3
+already exists. You may want to remove it:
+  rm '/usr/local/bin/idle3'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.13
+
+To list all files that would be deleted:
+  brew link --overwrite python@3.13 --dry-run
+
+Possible conflicting files are:
+/usr/local/bin/idle3 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/idle3
+/usr/local/bin/pip3 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/pip3
+/usr/local/bin/pydoc3 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/pydoc3
+/usr/local/bin/python3 -> /Library/Frameworks/Python.framework/Versions/3.12/bin/python3
+/usr/local/bin/python3-config -> /Library/Frameworks/Python.framework/Versions/3.12/bin/python3-config
+==> Summary
+🍺  /usr/local/Cellar/python@3.13/3.13.3: 9,261 files, 205.5MB, built in 28 minutes 33 seconds
+==> Installing git-lfs dependency: pcre2
+==> ./configure --enable-pcre2-16 --enable-pcre2-32 --enable-pcre2grep-libz --enable-pcre2grep-libbz2 --enable-jit --enable-pcre2test-libedit
+==> make
+==> make install
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+🍺  /usr/local/Cellar/pcre2/10.45: 242 files, 7.0MB, built in 144 minutes 48 seconds
+==> Installing git-lfs dependency: swig
+==> ./configure
+==> make
+==> make install
+🍺  /usr/local/Cellar/swig/4.3.1: 848 files, 6.0MB, built in 1 minute 19 seconds
+==> Installing git-lfs dependency: llvm@19
+==> Patching
+==> Applying 1682c99a8877364f1d847395cef501e813804caa.patch
+==> Applying 88dd0d33147a7f46a3c9df4aed28ad4e47ef597c.patch
+==> Applying a3e8b860788934d7cc1489f850f00dcfd9d8b595.patch
+==> cmake -G Ninja .. -DLLVM_ENABLE_PROJECTS=clang;clang-tools-extra;mlir;polly -DLLVM_ENABLE_RUNTIMES=compiler-rt;libcxx;libcxxabi;libunwind;pstl -DLLVM_POLLY_LINK_INTO_TOOLS=ON -D
+==> cmake --build .
+
